@@ -1,0 +1,182 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "565dd4cd-3458-4e26-8cb8-cc6b370af252")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 26.67 22.86)
+		(size 34.29 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "52811641-f7fa-4b38-b648-2dad88587670")
+		(property "Sheetname" "Power"
+			(at 26.67 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 26.67 47.5746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Hansoglasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 87.63 63.5)
+		(size 30.48 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5390385b-9d52-4962-9ccb-8c4e0a3e3df7")
+		(property "Sheetname" "Connectors"
+			(at 87.63 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connectors.kicad_sch"
+			(at 87.63 90.7546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Hansoglasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 85.09 24.13)
+		(size 29.21 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5d3d1737-fd18-4c19-965e-7a340bbed075")
+		(property "Sheetname" "MCU"
+			(at 85.09 23.4184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 85.09 47.5746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Hansoglasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 29.21 66.04)
+		(size 27.94 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b2b51a2c-670d-4f2e-9a6b-3b326a8374fa")
+		(property "Sheetname" "Speaker"
+			(at 29.21 65.3284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "speaker.kicad_sch"
+			(at 29.21 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Hansoglasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
