@@ -362,113 +362,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1366,13 +1259,7 @@
 		(uuid "11fdbf98-1afa-4a31-ad5a-59a8b6fd2429")
 	)
 	(junction
-		(at 34.29 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6128d76f-ff6a-4136-b70f-58a1e9f7aa04")
-	)
-	(junction
-		(at 73.66 35.56)
+		(at 86.36 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "71970627-934b-4d08-803c-5cc18f4e0e9f")
@@ -1384,7 +1271,7 @@
 		(uuid "7720242b-45a3-43a0-a365-de73ccacc5c8")
 	)
 	(junction
-		(at 80.01 35.56)
+		(at 92.71 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9b23fa82-742a-48b8-a38b-b5d66ebac361")
@@ -1401,8 +1288,14 @@
 		(color 0 0 0 0)
 		(uuid "c1d33563-a8b3-4de3-a291-c64d4a3db4f0")
 	)
+	(junction
+		(at 54.61 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3b1bafc-b645-46c3-96f4-ad132462fb83")
+	)
 	(no_connect
-		(at 55.88 40.64)
+		(at 68.58 40.64)
 		(uuid "2ea78f65-f4ce-4de4-a4e7-105cf5eacb32")
 	)
 	(no_connect
@@ -1431,13 +1324,33 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 35.56) (xy 58.42 35.56)
+			(xy 54.61 38.1) (xy 58.42 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1529cc12-e907-4659-ad36-4d133e933984")
+	)
+	(wire
+		(pts
+			(xy 68.58 35.56) (xy 71.12 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2b124299-067b-4237-b347-894b32bd2705")
+	)
+	(wire
+		(pts
+			(xy 54.61 53.34) (xy 54.61 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c08817e-6204-40e2-be86-11c89e99f483")
 	)
 	(wire
 		(pts
@@ -1451,7 +1364,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 35.56) (xy 80.01 35.56)
+			(xy 86.36 35.56) (xy 92.71 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1471,7 +1384,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 55.88) (xy 50.8 55.88)
+			(xy 36.83 53.34) (xy 40.64 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1551,7 +1464,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 55.88) (xy 63.5 55.88)
+			(xy 48.26 53.34) (xy 54.61 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1561,7 +1474,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 35.56) (xy 73.66 35.56)
+			(xy 78.74 35.56) (xy 86.36 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1591,7 +1504,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 38.1) (xy 45.72 38.1)
+			(xy 52.07 38.1) (xy 54.61 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1631,33 +1544,13 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 35.56) (xy 81.28 35.56)
+			(xy 92.71 35.56) (xy 93.98 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fa1df78c-5c87-48bb-b038-b9d4366fcf6c")
-	)
-	(label "+5V_Unfused"
-		(at 43.18 38.1 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4d9f2b1d-7392-4edf-b5d8-38f11b23eea5")
-	)
-	(label "+5V_Unfused"
-		(at 63.5 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8cf1144e-1b4b-4d70-a23e-a780cd50f935")
 	)
 	(label "+3V3_Unfused"
 		(at 88.9 78.74 0)
@@ -1681,7 +1574,7 @@
 	)
 	(hierarchical_label "USB_+5V"
 		(shape input)
-		(at 46.99 55.88 180)
+		(at 36.83 53.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1692,7 +1585,7 @@
 	)
 	(hierarchical_label "5V_unfused"
 		(shape input)
-		(at 39.37 38.1 180)
+		(at 52.07 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1817,7 +1710,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 73.66 31.75 180)
+		(at 86.36 31.75 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1825,7 +1718,7 @@
 		(dnp no)
 		(uuid "27fccfca-0d8b-4032-b5b3-ffbe5f4c62d3")
 		(property "Reference" "C5"
-			(at 69.342 30.48 0)
+			(at 82.042 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1834,7 +1727,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 70.104 32.512 0)
+			(at 82.804 32.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1843,7 +1736,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 72.6948 27.94 0)
+			(at 85.3948 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1852,7 +1745,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO%20YUDEN_03-05-2025_Tayio_Yuden_1102023_MS_mlcc_all_e-3081579-1-65.pdf"
-			(at 73.66 31.75 0)
+			(at 86.36 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1861,7 +1754,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 73.66 31.75 0)
+			(at 86.36 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1870,7 +1763,7 @@
 			)
 		)
 		(property "Mouser #" "963-A168BB5226MTNA01"
-			(at 73.66 31.75 0)
+			(at 86.36 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1879,7 +1772,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.com/ProductDetail/TAIYO-YUDEN/MSASA168BB5226MTNA01?qs=efUn273yAhczomwMiufDyA%3D%3D&srsltid=AfmBOoqSghDDzP1IhMA9vfNgjLHr8NMV2F8yBZI5yO5GIj8H5zAn6JNM"
-			(at 73.66 31.75 0)
+			(at 86.36 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1888,7 +1781,7 @@
 			)
 		)
 		(property "JLCPCB #" "C59461"
-			(at 73.66 31.75 0)
+			(at 86.36 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1897,7 +1790,7 @@
 			)
 		)
 		(property "Mouser Part Number" "963-A168BB5226MTNA01"
-			(at 73.66 31.75 0)
+			(at 86.36 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1922,7 +1815,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 54.61 55.88 180)
+		(at 44.45 53.34 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1931,7 +1824,7 @@
 		(fields_autoplaced yes)
 		(uuid "2dd60c96-77c9-48eb-8a97-ba34b284c99f")
 		(property "Reference" "D20"
-			(at 54.9275 49.53 0)
+			(at 44.7675 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1939,7 +1832,7 @@
 			)
 		)
 		(property "Value" "D_Schottky"
-			(at 54.9275 52.07 0)
+			(at 44.7675 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1947,7 +1840,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_PowerDI-123"
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1956,7 +1849,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Infineon-Technologies-BAT60A-E6327_C520634.pdf"
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1965,7 +1858,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1974,7 +1867,7 @@
 			)
 		)
 		(property "Mouser #" "621-DFLS160-F"
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1983,7 +1876,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.com/ProductDetail/Diodes-Incorporated/DFLS160-7?qs=gAIB%252Bn6SvSQZOTFja6ZMPQ%3D%3D"
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1992,7 +1885,7 @@
 			)
 		)
 		(property "JLCPCB #" "C177023"
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2001,7 +1894,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2010,7 +1903,7 @@
 			)
 		)
 		(property "Part Number" ""
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2019,7 +1912,7 @@
 			)
 		)
 		(property "Antenna Connector" ""
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2028,7 +1921,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2037,7 +1930,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2046,7 +1939,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2055,7 +1948,7 @@
 			)
 		)
 		(property "JLCPCB Link" ""
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2064,7 +1957,7 @@
 			)
 		)
 		(property "Mouser Part Number" "726-BAT60AE6327"
-			(at 54.61 55.88 0)
+			(at 44.45 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2255,7 +2148,7 @@
 	)
 	(symbol
 		(lib_id "0_LHRE_Symbols:SW_SPDT")
-		(at 50.8 38.1 0)
+		(at 63.5 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2264,7 +2157,7 @@
 		(fields_autoplaced yes)
 		(uuid "38d019f0-4886-45e6-91d8-d2657be14271")
 		(property "Reference" "SW1"
-			(at 50.8 29.21 0)
+			(at 63.5 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2272,7 +2165,7 @@
 			)
 		)
 		(property "Value" "SW_SPDT"
-			(at 50.8 31.75 0)
+			(at 63.5 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2280,7 +2173,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_SMD:SW_SPDT_PCM12"
-			(at 50.8 38.1 0)
+			(at 63.5 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2289,7 +2182,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/2/240/pcm-3051144.pdf"
-			(at 50.8 45.72 0)
+			(at 63.5 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2298,7 +2191,7 @@
 			)
 		)
 		(property "Description" "Slide Switch, single pole double throw"
-			(at 50.8 38.1 0)
+			(at 63.5 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2307,7 +2200,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.com/ProductDetail/CK/PCM12SMTBR?qs=By6Nw2ByBD1OEOnWcdZb2g%3D%3D"
-			(at 50.8 38.1 0)
+			(at 63.5 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2316,7 +2209,7 @@
 			)
 		)
 		(property "Mouser #" "611-PCM12SMTBR"
-			(at 50.8 38.1 0)
+			(at 63.5 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2325,7 +2218,7 @@
 			)
 		)
 		(property "JLCPCB #" "C319020"
-			(at 50.8 38.1 0)
+			(at 63.5 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2419,7 +2312,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 27.94 180)
+		(at 86.36 27.94 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2428,7 +2321,7 @@
 		(fields_autoplaced yes)
 		(uuid "5746a6a2-3130-49bd-be1b-9cfba44113db")
 		(property "Reference" "#PWR08"
-			(at 73.66 21.59 0)
+			(at 86.36 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2437,7 +2330,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.66 22.86 0)
+			(at 86.36 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2445,7 +2338,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 27.94 0)
+			(at 86.36 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2454,7 +2347,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 27.94 0)
+			(at 86.36 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2463,7 +2356,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 27.94 0)
+			(at 86.36 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2749,7 +2642,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 80.01 35.56 180)
+		(at 92.71 35.56 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2758,7 +2651,7 @@
 		(fields_autoplaced yes)
 		(uuid "aefc5df2-c3c9-48aa-9d42-be0f1eedd67b")
 		(property "Reference" "#FLG01"
-			(at 80.01 37.465 0)
+			(at 92.71 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2767,7 +2660,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 80.01 40.64 0)
+			(at 92.71 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2775,7 +2668,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 35.56 0)
+			(at 92.71 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2784,7 +2677,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 80.01 35.56 0)
+			(at 92.71 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2793,7 +2686,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 80.01 35.56 0)
+			(at 92.71 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3026,72 +2919,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 34.29 86.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cb30859e-31cf-4237-a37a-1de84c824d4d")
-		(property "Reference" "TP3"
-			(at 29.7179 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GND"
-			(at 31.75 84.328 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm"
-			(at 34.29 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 34.29 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 34.29 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "61382b73-510a-48a4-adbb-d8b9bc09d5a3")
-		)
-		(instances
-			(project "Hansoglasses"
-				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/52811641-f7fa-4b38-b648-2dad88587670"
-					(reference "TP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 71.12 107.95 0)
 		(unit 1)
@@ -3159,7 +2986,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 81.28 35.56 0)
+		(at 93.98 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3168,7 +2995,7 @@
 		(fields_autoplaced yes)
 		(uuid "ec0b344b-3c16-4e1a-9042-28aa572ef3c0")
 		(property "Reference" "#PWR07"
-			(at 81.28 39.37 0)
+			(at 93.98 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3177,7 +3004,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 81.28 30.48 0)
+			(at 93.98 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3185,7 +3012,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 35.56 0)
+			(at 93.98 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3194,7 +3021,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 35.56 0)
+			(at 93.98 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3203,7 +3030,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 81.28 35.56 0)
+			(at 93.98 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3225,7 +3052,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 62.23 35.56 90)
+		(at 74.93 35.56 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3233,7 +3060,7 @@
 		(dnp no)
 		(uuid "f510116c-865e-4cfd-8ba4-ee95cbdaa2bd")
 		(property "Reference" "F2"
-			(at 62.23 30.48 90)
+			(at 74.93 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3241,7 +3068,7 @@
 			)
 		)
 		(property "Value" "1A"
-			(at 62.23 33.02 90)
+			(at 74.93 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3249,7 +3076,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 62.23 37.338 90)
+			(at 74.93 37.338 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3258,7 +3085,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-0603hv-fast-acting-chip-surface-mount-fuse-data-sheet.pdf"
-			(at 62.23 35.56 0)
+			(at 74.93 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3267,7 +3094,7 @@
 			)
 		)
 		(property "Description" "1A Disposable Fuse"
-			(at 62.23 35.56 0)
+			(at 74.93 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3276,7 +3103,7 @@
 			)
 		)
 		(property "Mouser #" "504-TR-0603HV1-R"
-			(at 62.23 35.56 90)
+			(at 74.93 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3285,7 +3112,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.com/ProductDetail/Eaton-Electronics/TR-0603HV1-R?qs=xZ%2FP%252Ba9zWqa2z3F2%252BP4ViA%3D%3D&srsltid=AfmBOorczubBC8HNS-sWmzAXR02xYGYbhcst40jc1DNCTgzLsShWjU0a"
-			(at 62.23 35.56 90)
+			(at 74.93 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3294,7 +3121,7 @@
 			)
 		)
 		(property "JLCPCB #" "C136329"
-			(at 62.23 35.56 0)
+			(at 74.93 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3303,7 +3130,7 @@
 			)
 		)
 		(property "Antenna Connector" ""
-			(at 62.23 35.56 0)
+			(at 74.93 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3312,7 +3139,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 62.23 35.56 0)
+			(at 74.93 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3321,7 +3148,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 62.23 35.56 0)
+			(at 74.93 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3330,7 +3157,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 62.23 35.56 0)
+			(at 74.93 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3339,7 +3166,7 @@
 			)
 		)
 		(property "JLCPCB Link" ""
-			(at 62.23 35.56 0)
+			(at 74.93 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3348,7 +3175,7 @@
 			)
 		)
 		(property "Mouser Part Number" "504-TR-0603HV1-R"
-			(at 62.23 35.56 90)
+			(at 74.93 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)

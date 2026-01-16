@@ -2090,6 +2090,12 @@
 		(uuid "7a6ccfe1-1043-4786-b017-4b9d0c97ca30")
 	)
 	(junction
+		(at 38.1 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0de9ddff-c5e1-4203-8899-3ff8c4f3a4e4")
+	)
+	(junction
 		(at 134.62 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2106,6 +2112,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "26f341a2-3164-4e1d-9d48-6b6cf0c85ab1")
+	)
+	(junction
+		(at 22.86 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6e167738-26bd-41b5-a333-e1b9c55ceaec")
 	)
 	(junction
 		(at 146.05 59.69)
@@ -2245,7 +2257,7 @@
 	)
 	(polyline
 		(pts
-			(xy 20.32 25.4) (xy 20.32 27.94)
+			(xy 13.97 25.4) (xy 13.97 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2262,6 +2274,16 @@
 			(type default)
 		)
 		(uuid "0f832c59-a304-4e76-9bc0-b28834b409e4")
+	)
+	(wire
+		(pts
+			(xy 19.05 83.82) (xy 22.86 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cb5ea23-cdc5-4c03-a0b2-262745abaf32")
 	)
 	(wire
 		(pts
@@ -2305,7 +2327,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 48.26) (xy 38.1 43.18)
+			(xy 38.1 48.26) (xy 38.1 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2325,7 +2347,7 @@
 	)
 	(polyline
 		(pts
-			(xy 20.32 110.49) (xy 88.9 110.49)
+			(xy 13.97 110.49) (xy 88.9 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2352,6 +2374,16 @@
 			(type default)
 		)
 		(uuid "5ea6ba0d-d108-43b3-a712-0accde61581d")
+	)
+	(wire
+		(pts
+			(xy 22.86 76.2) (xy 22.86 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "602186e2-fc45-41cd-bc74-f868b8cf3a0c")
 	)
 	(wire
 		(pts
@@ -2405,6 +2437,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 45.72) (xy 38.1 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94b7ebb7-ed1a-4550-ae92-1522749b44e8")
+	)
+	(wire
+		(pts
 			(xy 53.34 40.64) (xy 53.34 43.18)
 		)
 		(stroke
@@ -2425,13 +2467,23 @@
 	)
 	(polyline
 		(pts
-			(xy 88.9 25.4) (xy 20.32 25.4)
+			(xy 88.9 25.4) (xy 13.97 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a6a000ce-3632-419b-ad62-324a8f20949f")
+	)
+	(wire
+		(pts
+			(xy 22.86 45.72) (xy 38.1 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6c7c99f-2518-426c-be49-0094172963f8")
 	)
 	(wire
 		(pts
@@ -2455,7 +2507,7 @@
 	)
 	(polyline
 		(pts
-			(xy 20.32 26.67) (xy 20.32 110.49)
+			(xy 13.97 26.67) (xy 13.97 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2482,6 +2534,16 @@
 			(type default)
 		)
 		(uuid "e25999ab-03ee-4038-9c42-3a571bc40f2f")
+	)
+	(wire
+		(pts
+			(xy 22.86 83.82) (xy 38.1 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e378bd7c-1435-4b99-9d17-18f9c6df785b")
 	)
 	(wire
 		(pts
@@ -2555,7 +2617,7 @@
 	)
 	(hierarchical_label "SD_MODE"
 		(shape output)
-		(at 38.1 83.82 180)
+		(at 19.05 83.82 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2634,6 +2696,110 @@
 			(justify left)
 		)
 		(uuid "d43ecb28-ba4e-4120-a039-14260ec0d081")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 22.86 80.01 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e6bd80c-80f9-4d3c-b544-e3df1316ad49")
+		(property "Reference" "R9"
+			(at 17.78 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 20.32 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 24.638 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 22.86 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "603-RC0603FR-07100KL"
+			(at 22.86 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100KL?qs=e1ok2LiJcmaihem8Va5%2Fsw%3D%3D&srsltid=AfmBOooOdyEJhW55T0bTHCn9x1S_hWTbTVBciwDqFDvXTF-M6ZtkL9r2"
+			(at 22.86 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB #" "C14675"
+			(at 22.86 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-RC0603FR-07100KL"
+			(at 22.86 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ddfc0916-2ff8-40ad-95ef-ec66ed2e3df1")
+		)
+		(pin "1"
+			(uuid "49d7366f-2019-4857-ae34-242abda2606f")
+		)
+		(instances
+			(project "Hansoglasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/5d3d1737-fd18-4c19-965e-7a340bbed075"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
