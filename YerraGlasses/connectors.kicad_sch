@@ -171,7 +171,7 @@
 	)
 	(polyline
 		(pts
-			(xy 125.73 13.97) (xy 125.73 31.75)
+			(xy 149.86 13.97) (xy 149.86 31.75)
 		)
 		(stroke
 			(width 0)
@@ -191,7 +191,7 @@
 	)
 	(polyline
 		(pts
-			(xy 15.24 13.97) (xy 125.73 13.97)
+			(xy 15.24 13.97) (xy 149.86 13.97)
 		)
 		(stroke
 			(width 0)
@@ -201,7 +201,7 @@
 	)
 	(polyline
 		(pts
-			(xy 125.73 31.75) (xy 15.24 31.75)
+			(xy 149.86 31.75) (xy 15.24 31.75)
 		)
 		(stroke
 			(width 0)
@@ -276,6 +276,29 @@
 			(justify left)
 		)
 		(uuid "c8e4a306-ec4c-4c62-bf40-4c2586e455bf")
+	)
+	(hierarchical_label "5V_PICO"
+		(shape input)
+		(at 138.43 24.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d323aec4-55cd-4861-8a2e-7ce8afc840f4")
+	)
+	(hierarchical_label "GND_PICO"
+		(shape input)
+		(at 138.43 26.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left)
+		)
+		(uuid "e7fa1063-3647-4ef0-bade-47d6f4332204")
 	)
 	(hierarchical_label "TX_PICO"
 		(shape output)
@@ -498,6 +521,74 @@
 			(project "Hansoglasses"
 				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/5390385b-9d52-4962-9ccb-8c4e0a3e3df7"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 133.35 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cef06b06-bf7b-4659-bb5e-df2755430770")
+		(property "Reference" "J5"
+			(at 133.985 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 133.985 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+			(at 133.35 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 133.35 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3870936b-8f54-45f5-be99-6bf64018897b")
+		)
+		(pin "1"
+			(uuid "7463ee49-a828-4aec-88b2-0ed1258db586")
+		)
+		(instances
+			(project "YerraGlasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/5390385b-9d52-4962-9ccb-8c4e0a3e3df7"
+					(reference "J5")
 					(unit 1)
 				)
 			)

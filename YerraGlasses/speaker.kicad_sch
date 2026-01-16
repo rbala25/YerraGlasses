@@ -783,12 +783,6 @@
 		(uuid "531971c6-bed8-435e-8016-569eb1b12e70")
 	)
 	(junction
-		(at 60.96 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54199d87-3fe9-4d91-bf6b-412bfeae2067")
-	)
-	(junction
 		(at 149.86 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -844,7 +838,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 33.02) (xy 60.96 36.83)
+			(xy 60.96 33.02) (xy 60.96 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1061,16 +1055,6 @@
 			(type default)
 		)
 		(uuid "acbb4ff0-acc1-4e49-ae9f-07485be7cf8d")
-	)
-	(wire
-		(pts
-			(xy 60.96 36.83) (xy 60.96 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af187a0b-a7ab-43f0-bf24-318666ce8d67")
 	)
 	(polyline
 		(pts
@@ -1456,73 +1440,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 68.58 36.83 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "751adaf7-1049-4341-acf8-8fce5f95ffed")
-		(property "Reference" "#PWR09"
-			(at 74.93 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 72.39 36.8299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ffab880c-2501-466f-a03a-1045a4e0d850")
-		)
-		(instances
-			(project "Hansoglasses"
-				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/b2b51a2c-670d-4f2e-9a6b-3b326a8374fa"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 157.48 33.02 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1698,110 +1615,6 @@
 			(project "Hansoglasses"
 				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/b2b51a2c-670d-4f2e-9a6b-3b326a8374fa"
 					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 64.77 36.83 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "90ba3bb1-5aaa-41c7-ae75-29d304af3797")
-		(property "Reference" "C4"
-			(at 64.77 29.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 64.77 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 60.96 37.7952 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/1/GRM21BR61H106KE43_01A.pdf"
-			(at 64.77 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 64.77 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser #" "81-GRM21BR61H106KE3L"
-			(at 64.77 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Link" "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61H106KE43L?qs=lYGu3FyN48cBZlIduWKclg%3D%3D&srsltid=AfmBOoovanZHDCILOsTNmRDlbeowyCnSNVD-tyLdgO5iJbYQ29cv4-uh"
-			(at 64.77 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB #" "C440198"
-			(at 64.77 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "81-GRM21BR61H106KE3L"
-			(at 64.77 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a409b317-9220-4555-bedb-e1d718918133")
-		)
-		(pin "1"
-			(uuid "629f7ee0-bcc3-4085-b4a6-e233663ff20c")
-		)
-		(instances
-			(project "Hansoglasses"
-				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/b2b51a2c-670d-4f2e-9a6b-3b326a8374fa"
-					(reference "C4")
 					(unit 1)
 				)
 			)
