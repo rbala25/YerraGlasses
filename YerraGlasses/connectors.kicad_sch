@@ -243,7 +243,7 @@
 		)
 		(uuid "5e9be279-7fd4-47aa-87b5-7fed48e94d11")
 	)
-	(hierarchical_label "5V_unfused"
+	(hierarchical_label "9V_unfused"
 		(shape output)
 		(at 30.48 24.13 0)
 		(effects
