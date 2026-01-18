@@ -2114,10 +2114,10 @@
 		(uuid "26f341a2-3164-4e1d-9d48-6b6cf0c85ab1")
 	)
 	(junction
-		(at 22.86 83.82)
+		(at 53.34 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6e167738-26bd-41b5-a333-e1b9c55ceaec")
+		(uuid "670e424c-ac35-44da-be29-959c2db7ec01")
 	)
 	(junction
 		(at 146.05 59.69)
@@ -2265,6 +2265,16 @@
 		)
 		(uuid "0a17da6a-d091-4c1d-befa-977dbd59f652")
 	)
+	(wire
+		(pts
+			(xy 25.4 68.58) (xy 25.4 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d62bd8a-4dff-4335-9a2b-bdd7cc5fddc7")
+	)
 	(polyline
 		(pts
 			(xy 88.9 110.49) (xy 88.9 25.4)
@@ -2277,13 +2287,13 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 83.82) (xy 22.86 83.82)
+			(xy 53.34 38.1) (xy 53.34 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1cb5ea23-cdc5-4c03-a0b2-262745abaf32")
+		(uuid "12ed1954-dd8c-4e1c-b226-f03a1a5934b5")
 	)
 	(wire
 		(pts
@@ -2377,7 +2387,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 76.2) (xy 22.86 45.72)
+			(xy 25.4 60.96) (xy 25.4 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2417,7 +2427,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 35.56) (xy 53.34 40.64)
+			(xy 53.34 35.56) (xy 53.34 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2477,7 +2487,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 45.72) (xy 38.1 45.72)
+			(xy 25.4 45.72) (xy 38.1 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2504,6 +2514,16 @@
 			(type default)
 		)
 		(uuid "b4601cd6-4a5b-4ffd-8bce-31c3636755c0")
+	)
+	(wire
+		(pts
+			(xy 25.4 83.82) (xy 38.1 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b888a9a4-f35f-4a51-b7bc-723364683b97")
 	)
 	(polyline
 		(pts
@@ -2534,16 +2554,6 @@
 			(type default)
 		)
 		(uuid "e25999ab-03ee-4038-9c42-3a571bc40f2f")
-	)
-	(wire
-		(pts
-			(xy 22.86 83.82) (xy 38.1 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e378bd7c-1435-4b99-9d17-18f9c6df785b")
 	)
 	(wire
 		(pts
@@ -2617,7 +2627,7 @@
 	)
 	(hierarchical_label "SD_MODE"
 		(shape output)
-		(at 19.05 83.82 270)
+		(at 25.4 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2698,8 +2708,104 @@
 		(uuid "d43ecb28-ba4e-4120-a039-14260ec0d081")
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 57.15 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3fc5a668-5991-439d-a286-9286f98ec4e0")
+		(property "Reference" "C15"
+			(at 58.42 33.782 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u"
+			(at 56.388 34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 60.96 37.1348 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 57.15 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "187-CL31A475KBHNNNE"
+			(at 57.15 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL31A475KBHNNNE?qs=X6jEic%2FHinDAtDUeTge3nw%3D%3D"
+			(at 57.15 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB #" "C513768"
+			(at 57.15 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7d0e08ec-07ec-45a1-b4a4-7415e3ca9baf")
+		)
+		(pin "1"
+			(uuid "e9afe86c-6635-40cc-b009-3f20032dc7a3")
+		)
+		(instances
+			(project "YerraGlasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/5d3d1737-fd18-4c19-965e-7a340bbed075"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
-		(at 22.86 80.01 0)
+		(at 25.4 64.77 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2708,7 +2814,7 @@
 		(dnp no)
 		(uuid "4e6bd80c-80f9-4d3c-b544-e3df1316ad49")
 		(property "Reference" "R9"
-			(at 17.78 80.01 90)
+			(at 20.32 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2716,7 +2822,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 20.32 80.01 90)
+			(at 22.86 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2724,7 +2830,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 24.638 80.01 90)
+			(at 27.178 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2733,7 +2839,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 80.01 0)
+			(at 25.4 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2742,7 +2848,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 22.86 80.01 0)
+			(at 25.4 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2751,7 +2857,7 @@
 			)
 		)
 		(property "Mouser #" "603-RC0603FR-07100KL"
-			(at 22.86 80.01 0)
+			(at 25.4 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2760,7 +2866,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100KL?qs=e1ok2LiJcmaihem8Va5%2Fsw%3D%3D&srsltid=AfmBOooOdyEJhW55T0bTHCn9x1S_hWTbTVBciwDqFDvXTF-M6ZtkL9r2"
-			(at 22.86 80.01 0)
+			(at 25.4 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2769,7 +2875,7 @@
 			)
 		)
 		(property "JLCPCB #" "C14675"
-			(at 22.86 80.01 90)
+			(at 25.4 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2778,7 +2884,7 @@
 			)
 		)
 		(property "Mouser Part Number" "603-RC0603FR-07100KL"
-			(at 22.86 80.01 90)
+			(at 25.4 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3031,6 +3137,73 @@
 			(project ""
 				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/5d3d1737-fd18-4c19-965e-7a340bbed075"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8187db6a-8fc1-4d26-ba0e-4b96be2bde31")
+		(property "Reference" "#PWR016"
+			(at 67.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 38.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 60.96 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c72196c-3070-4484-9dfc-2db4325432c8")
+		)
+		(instances
+			(project "YerraGlasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/5d3d1737-fd18-4c19-965e-7a340bbed075"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)

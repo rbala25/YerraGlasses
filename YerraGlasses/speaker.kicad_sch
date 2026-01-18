@@ -771,6 +771,12 @@
 		(uuid "396da15b-6b9f-45f4-8b4c-026d3fd12d5d")
 	)
 	(junction
+		(at 60.96 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3dd1ff5e-8cab-4337-9cd7-7ca16dd7447c")
+	)
+	(junction
 		(at 58.42 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -838,7 +844,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 33.02) (xy 60.96 41.91)
+			(xy 60.96 33.02) (xy 60.96 36.83)
 		)
 		(stroke
 			(width 0)
@@ -1045,6 +1051,16 @@
 			(type default)
 		)
 		(uuid "a63cc7b2-80e0-4f15-b6fd-41bb4d85d495")
+	)
+	(wire
+		(pts
+			(xy 60.96 36.83) (xy 60.96 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab4de34d-1113-453e-ab28-9bc4ccc1d308")
 	)
 	(polyline
 		(pts
@@ -1366,6 +1382,73 @@
 			(project ""
 				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/b2b51a2c-670d-4f2e-9a6b-3b326a8374fa"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 68.58 36.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27ad67b9-0a81-4715-aea0-bcebab161b9b")
+		(property "Reference" "#PWR018"
+			(at 74.93 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 72.39 36.8299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3897242c-55ab-4d4b-89a3-5232b232fc2e")
+		)
+		(instances
+			(project "YerraGlasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/b2b51a2c-670d-4f2e-9a6b-3b326a8374fa"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -1887,6 +1970,110 @@
 			(project "Hansoglasses"
 				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/b2b51a2c-670d-4f2e-9a6b-3b326a8374fa"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 64.77 36.83 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9c66ecd-e2b9-4e51-9a91-c44011a453c6")
+		(property "Reference" "C4"
+			(at 64.77 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 64.77 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 60.96 37.7952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/1/GRM21BR61H106KE43_01A.pdf"
+			(at 64.77 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 64.77 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "81-GRM21BR61H106KE3L"
+			(at 64.77 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61H106KE43L?qs=lYGu3FyN48cBZlIduWKclg%3D%3D&srsltid=AfmBOoovanZHDCILOsTNmRDlbeowyCnSNVD-tyLdgO5iJbYQ29cv4-uh"
+			(at 64.77 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB #" "C440198"
+			(at 64.77 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-GRM21BR61H106KE3L"
+			(at 64.77 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7be087e2-d725-429b-9be4-3be7850b639c")
+		)
+		(pin "1"
+			(uuid "a20d2435-30c9-43fe-80f3-b80599f63625")
+		)
+		(instances
+			(project "YerraGlasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/b2b51a2c-670d-4f2e-9a6b-3b326a8374fa"
+					(reference "C4")
 					(unit 1)
 				)
 			)
