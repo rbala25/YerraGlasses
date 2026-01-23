@@ -348,7 +348,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 25.4 24.13 0)
 			(effects
 				(font
@@ -375,7 +375,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB #" "C160262"
+		(property "JLCPCB #" "C131337"
 			(at 25.4 24.13 0)
 			(effects
 				(font
@@ -384,7 +384,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser #" "306-B2B-EH-A-GUP"
+		(property "Mouser #" "306-B2BPHKSLFSNPP"
 			(at 25.4 24.13 0)
 			(effects
 				(font
@@ -393,7 +393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Link" "https://www.mouser.com/ProductDetail/JST-Commercial/B2B-EH-A-GU?qs=cIziFXvMxOVbN2zmpYIt5A%3D%3D&srsltid=AfmBOoqjT3AJqmuw6yDMpvDoG3xBSOajkXGrYvEWjtYwtS_OyVflT4NR"
+		(property "Mouser Link" "https://www.mouser.com/ProductDetail/JST-Commercial/B2B-PH-K-SLFSN?qs=cdbOS8ANM9AlozzPlOt72g%3D%3D"
 			(at 25.4 24.13 0)
 			(effects
 				(font
@@ -402,7 +402,79 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "306-B2B-EH-A-GUP"
+		(property "Mouser Part Number" "306-B2BPHKSLFSNPP"
+			(at 25.4 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 25.4 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 25.4 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 25.4 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 25.4 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 25.4 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 25.4 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 25.4 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
 			(at 25.4 24.13 0)
 			(effects
 				(font
@@ -452,7 +524,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 85.09 24.13 0)
 			(effects
 				(font
@@ -479,7 +551,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB #" "C160262"
+		(property "JLCPCB #" "C131337"
 			(at 85.09 24.13 0)
 			(effects
 				(font
@@ -488,7 +560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser #" "306-B2B-EH-A-GUP"
+		(property "Mouser #" "306-B2BPHKSLFSNPP"
 			(at 85.09 24.13 0)
 			(effects
 				(font
@@ -497,7 +569,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Link" "https://www.mouser.com/ProductDetail/JST-Commercial/B2B-EH-A-GU?qs=cIziFXvMxOVbN2zmpYIt5A%3D%3D&srsltid=AfmBOoqjT3AJqmuw6yDMpvDoG3xBSOajkXGrYvEWjtYwtS_OyVflT4NR"
+		(property "Mouser Link" "https://www.mouser.com/ProductDetail/JST-Commercial/B2B-PH-K-SLFSN?qs=cdbOS8ANM9AlozzPlOt72g%3D%3D"
 			(at 85.09 24.13 0)
 			(effects
 				(font
@@ -506,7 +578,79 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "306-B2B-EH-A-GUP"
+		(property "Mouser Part Number" "306-B2BPHKSLFSNPP"
+			(at 85.09 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 85.09 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 85.09 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 85.09 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 85.09 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 85.09 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 85.09 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 85.09 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
 			(at 85.09 24.13 0)
 			(effects
 				(font
@@ -556,7 +700,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 109.22 24.13 0)
 			(effects
 				(font
@@ -583,7 +727,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB #" "C160262"
+		(property "JLCPCB #" "C131337"
 			(at 109.22 24.13 0)
 			(effects
 				(font
@@ -592,7 +736,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser #" "306-B2B-EH-A-GUP"
+		(property "Mouser #" "306-B2BPHKSLFSNPP"
 			(at 109.22 24.13 0)
 			(effects
 				(font
@@ -601,7 +745,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Link" "https://www.mouser.com/ProductDetail/JST-Commercial/B2B-EH-A-GU?qs=cIziFXvMxOVbN2zmpYIt5A%3D%3D&srsltid=AfmBOoqjT3AJqmuw6yDMpvDoG3xBSOajkXGrYvEWjtYwtS_OyVflT4NR"
+		(property "Mouser Link" "https://www.mouser.com/ProductDetail/JST-Commercial/B2B-PH-K-SLFSN?qs=cdbOS8ANM9AlozzPlOt72g%3D%3D"
 			(at 109.22 24.13 0)
 			(effects
 				(font
@@ -610,7 +754,79 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "306-B2B-EH-A-GUP"
+		(property "Mouser Part Number" "306-B2BPHKSLFSNPP"
+			(at 109.22 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 109.22 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 109.22 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 109.22 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 109.22 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 109.22 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 109.22 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 109.22 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
 			(at 109.22 24.13 0)
 			(effects
 				(font
@@ -660,7 +876,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 133.35 24.13 0)
 			(effects
 				(font
@@ -687,7 +903,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB #" "C160262"
+		(property "JLCPCB #" "C131337"
 			(at 133.35 24.13 0)
 			(effects
 				(font
@@ -696,7 +912,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser #" "306-B2B-EH-A-GUP"
+		(property "Mouser #" "306-B2BPHKSLFSNPP"
 			(at 133.35 24.13 0)
 			(effects
 				(font
@@ -705,7 +921,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Link" "https://www.mouser.com/ProductDetail/JST-Commercial/B2B-EH-A-GU?qs=cIziFXvMxOVbN2zmpYIt5A%3D%3D&srsltid=AfmBOoqjT3AJqmuw6yDMpvDoG3xBSOajkXGrYvEWjtYwtS_OyVflT4NR"
+		(property "Mouser Link" "https://www.mouser.com/ProductDetail/JST-Commercial/B2B-PH-K-SLFSN?qs=cdbOS8ANM9AlozzPlOt72g%3D%3D"
 			(at 133.35 24.13 0)
 			(effects
 				(font
@@ -714,7 +930,79 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "306-B2B-EH-A-GUP"
+		(property "Mouser Part Number" "306-B2BPHKSLFSNPP"
+			(at 133.35 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 133.35 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 133.35 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 133.35 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 133.35 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 133.35 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 133.35 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 133.35 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
 			(at 133.35 24.13 0)
 			(effects
 				(font
@@ -764,7 +1052,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 57.15 24.13 0)
 			(effects
 				(font
@@ -791,7 +1079,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB #" "C160262"
+		(property "JLCPCB #" "C131337"
 			(at 57.15 24.13 0)
 			(effects
 				(font
@@ -800,7 +1088,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser #" "306-B2B-EH-A-GUP"
+		(property "Mouser #" "306-B2BPHKSLFSNPP"
 			(at 57.15 24.13 0)
 			(effects
 				(font
@@ -809,7 +1097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Link" "https://www.mouser.com/ProductDetail/JST-Commercial/B2B-EH-A-GU?qs=cIziFXvMxOVbN2zmpYIt5A%3D%3D&srsltid=AfmBOoqjT3AJqmuw6yDMpvDoG3xBSOajkXGrYvEWjtYwtS_OyVflT4NR"
+		(property "Mouser Link" "https://www.mouser.com/ProductDetail/JST-Commercial/B2B-PH-K-SLFSN?qs=cdbOS8ANM9AlozzPlOt72g%3D%3D"
 			(at 57.15 24.13 0)
 			(effects
 				(font
@@ -818,7 +1106,79 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "306-B2B-EH-A-GUP"
+		(property "Mouser Part Number" "306-B2BPHKSLFSNPP"
+			(at 57.15 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 57.15 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 57.15 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 57.15 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 57.15 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 57.15 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 57.15 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 57.15 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
 			(at 57.15 24.13 0)
 			(effects
 				(font
