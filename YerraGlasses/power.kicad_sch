@@ -2196,6 +2196,12 @@
 		(uuid "ba5640c2-2186-4d54-98c7-3bc0ee41c8a7")
 	)
 	(junction
+		(at 86.36 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1522bf7-7391-450d-8bce-51481d5e120b")
+	)
+	(junction
 		(at 64.77 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2240,6 +2246,16 @@
 			(type default)
 		)
 		(uuid "0c5731f7-9b28-4eab-9beb-58f0ca9931b1")
+	)
+	(wire
+		(pts
+			(xy 86.36 36.83) (xy 92.71 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10c3610f-4a6a-4b5d-8be9-39940634863f")
 	)
 	(polyline
 		(pts
@@ -2330,6 +2346,16 @@
 			(type default)
 		)
 		(uuid "5d42a0ff-f90e-4d03-802b-5a1584f65d80")
+	)
+	(wire
+		(pts
+			(xy 86.36 36.83) (xy 77.47 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e23968a-1144-430e-9bea-2bef21eb45bd")
 	)
 	(polyline
 		(pts
@@ -2602,7 +2628,7 @@
 		(uuid "13ae3ebb-e2ff-485c-8da3-e83188cf1e23")
 	)
 	(label "5V_unfused"
-		(at 77.47 36.83 0)
+		(at 90.17 36.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2631,7 +2657,7 @@
 		)
 		(uuid "c089df42-1fad-4a96-b416-82538b871611")
 	)
-	(hierarchical_label "USB_+5V"
+	(hierarchical_label "USB_5V"
 		(shape input)
 		(at 39.37 85.09 180)
 		(effects
@@ -4578,6 +4604,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "604-APT1608LZGCK"
+			(at 120.65 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8c4627fb-450b-49b3-90e2-736c96a45115")
 		)
@@ -4588,6 +4623,181 @@
 			(project "YerraGlasses"
 				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/52811641-f7fa-4b38-b648-2dad88587670"
 					(reference "D32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 86.36 40.64 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "90ea68d6-d1e3-42db-8756-3d0f996ec8f3")
+		(property "Reference" "C11"
+			(at 80.01 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 82.55 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 85.3948 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/AutoMLCCKAM.pdf"
+			(at 86.36 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 86.36 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "581-KAM15BR72A104KT"
+			(at 86.36 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.com/ProductDetail/KYOCERA-AVX/KAM15BR72A104KT?qs=Jm2GQyTW%2Fbivdeq3a3Ovhw%3D%3D"
+			(at 86.36 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB #" "C14663"
+			(at 86.36 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "581-KAM15BR72A104KT"
+			(at 86.36 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 86.36 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 86.36 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 86.36 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 86.36 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 86.36 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 86.36 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 86.36 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 86.36 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4009abfd-b05c-4206-ba10-db6931d67f21")
+		)
+		(pin "1"
+			(uuid "4c63168e-f816-4706-8be9-ad668ae3d348")
+		)
+		(instances
+			(project "YerraGlasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/52811641-f7fa-4b38-b648-2dad88587670"
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -5297,6 +5507,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "603-UDD32C05L01"
+			(at 82.55 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ede9e7b4-aa87-4132-a342-962a486138b8")
 		)
@@ -5591,6 +5810,15 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
+			(at 134.62 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "71-CRCW0603-10K-E3"
 			(at 134.62 72.39 0)
 			(effects
 				(font
@@ -6009,6 +6237,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "604-APT1608LZGCK"
+			(at 134.62 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "79198322-efe4-49dc-aaba-15a7c0210b81")
 		)
@@ -6151,6 +6388,72 @@
 			(project "Hansoglasses"
 				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/52811641-f7fa-4b38-b648-2dad88587670"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 86.36 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed99472c-71ba-4cf8-a14b-74356b19399c")
+		(property "Reference" "#PWR025"
+			(at 86.36 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 86.36 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 86.36 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0df423f5-6bc3-4cec-bb66-2bf30a04b640")
+		)
+		(instances
+			(project "YerraGlasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/52811641-f7fa-4b38-b648-2dad88587670"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -6519,6 +6822,15 @@
 		)
 		(property "JLCPCB #" "C19829542"
 			(at 68.58 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "576-SP3205-01ETG"
+			(at 68.58 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)

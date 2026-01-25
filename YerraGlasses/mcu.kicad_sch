@@ -2280,12 +2280,6 @@
 		(uuid "7a6ccfe1-1043-4786-b017-4b9d0c97ca30")
 	)
 	(junction
-		(at 38.1 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0de9ddff-c5e1-4203-8899-3ff8c4f3a4e4")
-	)
-	(junction
 		(at 134.62 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2298,22 +2292,16 @@
 		(uuid "18355ec4-47e0-4c5b-bc6e-289c947a4921")
 	)
 	(junction
-		(at 29.21 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "23a453f6-cc87-4bdf-aef0-79ed7d5d5cc9")
-	)
-	(junction
-		(at 53.34 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "26f341a2-3164-4e1d-9d48-6b6cf0c85ab1")
-	)
-	(junction
 		(at 53.34 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "290e67e2-c2c8-472c-bf76-6c6fcfc71bd3")
+	)
+	(junction
+		(at 29.21 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d7c3fba-6ab5-463e-8d91-befe8285d142")
 	)
 	(junction
 		(at 53.34 25.4)
@@ -2334,16 +2322,16 @@
 		(uuid "d23a7f4e-b29e-493f-9102-7411892ecf89")
 	)
 	(junction
+		(at 38.1 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dcaff73c-8d0e-41b0-8e6e-49d7cedc89ba")
+	)
+	(junction
 		(at 53.34 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee4ac91c-1978-4c15-a50f-691c6cb9e6c0")
-	)
-	(junction
-		(at 29.21 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa882a35-2821-4f13-a36a-a6a846078bd6")
 	)
 	(no_connect
 		(at 38.1 86.36)
@@ -2487,7 +2475,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 68.58) (xy 25.4 83.82)
+			(xy 25.4 76.2) (xy 25.4 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2567,6 +2555,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 34.29) (xy 38.1 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30689e1b-340d-4a07-a421-a3e376ea31c0")
+	)
+	(wire
+		(pts
 			(xy 53.34 33.02) (xy 53.34 40.64)
 		)
 		(stroke
@@ -2574,16 +2572,6 @@
 			(type default)
 		)
 		(uuid "31328e00-4c79-4bf6-832a-d4ed279673fe")
-	)
-	(wire
-		(pts
-			(xy 38.1 48.26) (xy 38.1 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c3d0aaf-bdf6-4828-b46f-6188db679f5d")
 	)
 	(wire
 		(pts
@@ -2597,13 +2585,13 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 45.72) (xy 38.1 45.72)
+			(xy 29.21 55.88) (xy 29.21 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54ceac91-0c17-4927-864c-c84e78cce1e4")
+		(uuid "4ead6e7d-0e2b-4635-a6ff-57d9f80a2843")
 	)
 	(polyline
 		(pts
@@ -2637,7 +2625,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 60.96) (xy 25.4 45.72)
+			(xy 25.4 68.58) (xy 25.4 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2654,6 +2642,46 @@
 			(type default)
 		)
 		(uuid "690aacb8-595e-42e5-9c27-79cb050d7bb0")
+	)
+	(wire
+		(pts
+			(xy 29.21 55.88) (xy 29.21 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dab46b0-0139-4fc4-aec8-036f7b313597")
+	)
+	(wire
+		(pts
+			(xy 25.4 67.31) (xy 29.21 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "729e4ee7-bef7-4ae1-95b9-0f11c90d93e4")
+	)
+	(wire
+		(pts
+			(xy 40.64 40.64) (xy 45.72 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72a51893-a98e-44ca-bde2-997202b02088")
+	)
+	(wire
+		(pts
+			(xy 33.02 39.37) (xy 38.1 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b7df0ed-b8ac-4628-b8c7-c391269eb9ef")
 	)
 	(wire
 		(pts
@@ -2715,16 +2743,6 @@
 		)
 		(uuid "9482b9fc-d0db-4b83-a2f4-0b0f5f29632c")
 	)
-	(wire
-		(pts
-			(xy 38.1 45.72) (xy 38.1 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94b7ebb7-ed1a-4550-ae92-1522749b44e8")
-	)
 	(polyline
 		(pts
 			(xy 187.96 44.45) (xy 161.29 44.45)
@@ -2755,16 +2773,6 @@
 		)
 		(uuid "9f471bd0-e576-4f9e-ba02-19224600d928")
 	)
-	(wire
-		(pts
-			(xy 38.1 43.18) (xy 53.34 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a574819f-de6e-4c88-9454-e9c21f26aa82")
-	)
 	(polyline
 		(pts
 			(xy 88.9 17.78) (xy 13.97 17.78)
@@ -2774,16 +2782,6 @@
 			(type default)
 		)
 		(uuid "a6a000ce-3632-419b-ad62-324a8f20949f")
-	)
-	(wire
-		(pts
-			(xy 25.4 45.72) (xy 29.21 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6c7c99f-2518-426c-be49-0094172963f8")
 	)
 	(wire
 		(pts
@@ -2847,6 +2845,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 39.37) (xy 38.1 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6c81386-e4e7-4939-a3fe-043164edb1eb")
+	)
+	(wire
+		(pts
 			(xy 143.51 62.23) (xy 146.05 62.23)
 		)
 		(stroke
@@ -2875,6 +2883,16 @@
 		)
 		(uuid "ef4cd711-d9d5-4f68-9925-df7ff1548a7f")
 	)
+	(wire
+		(pts
+			(xy 38.1 34.29) (xy 38.1 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8d21629-f5dd-4e94-9451-714919fdc154")
+	)
 	(label "USB_DN"
 		(at 138.43 69.85 0)
 		(effects
@@ -2885,6 +2903,26 @@
 		)
 		(uuid "2cb7236d-ac1d-4421-a66c-0a31842f1e5b")
 	)
+	(label "VDD"
+		(at 53.34 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4b68092f-707c-4bfc-9af2-692e5b1868a5")
+	)
+	(label "VDD"
+		(at 25.4 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6d0b3430-3e40-4bd8-919f-6423144c5728")
+	)
 	(label "USB_DP"
 		(at 138.43 72.39 0)
 		(effects
@@ -2894,6 +2932,16 @@
 			(justify left bottom)
 		)
 		(uuid "8b4caa91-75ad-4f96-bd87-a357d7172ae3")
+	)
+	(label "VDD"
+		(at 25.4 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9c8ba3eb-085e-490a-96d5-c20b6017a632")
 	)
 	(label "USB_DN"
 		(at 68.58 58.42 0)
@@ -2999,7 +3047,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 29.21 49.53 180)
+		(at 29.21 63.5 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3008,7 +3056,7 @@
 		(fields_autoplaced yes)
 		(uuid "0717f16b-b90f-4700-a013-70f7913440a6")
 		(property "Reference" "R1"
-			(at 31.75 48.2599 0)
+			(at 31.75 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3017,7 +3065,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 31.75 50.7999 0)
+			(at 31.75 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3026,7 +3074,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 30.988 49.53 90)
+			(at 30.988 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3035,7 +3083,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 29.21 49.53 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3044,7 +3092,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 29.21 49.53 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3053,7 +3101,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW060310K0FKEA?qs=pAO1Z172M84BVnhDjtnsoQ%3D%3D"
-			(at 29.21 49.53 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3062,7 +3110,7 @@
 			)
 		)
 		(property "Mouser #" "71-CRCW0603-10K-E3"
-			(at 29.21 49.53 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3071,7 +3119,7 @@
 			)
 		)
 		(property "JLCPCB #" "C25804"
-			(at 29.21 49.53 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3080,7 +3128,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 29.21 49.53 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3089,7 +3137,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 29.21 49.53 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3098,7 +3146,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" ""
-			(at 29.21 49.53 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3107,7 +3155,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 29.21 49.53 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3116,7 +3164,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 29.21 49.53 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3125,7 +3173,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 29.21 49.53 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3134,7 +3182,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 29.21 49.53 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3143,7 +3191,16 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 29.21 49.53 0)
+			(at 29.21 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "71-CRCW0603-10K-E3"
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3167,11 +3224,78 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 25.4 39.37 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e402ca6-a33b-44cf-be58-c59e44cd2f43")
+		(property "Reference" "#PWR024"
+			(at 19.05 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 21.59 39.3699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 25.4 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98372fde-d953-491e-b635-ba2129c414c4")
+		)
+		(instances
+			(project "YerraGlasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/5d3d1737-fd18-4c19-965e-7a340bbed075"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 53.34 99.06 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -3504,7 +3628,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Link" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL31A475KBHNNNE?qs=X6jEic%2FHinDAtDUeTge3nw%3D%3D"
+		(property "Mouser Link" "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL31A475KBHNNNE?qs=X6jEic%2FHinDAtDUeTge3nw%3D%3D&srsltid=AfmBOoqXGShmHEWF5TPyw7LucCVZ4UfmTiFjkyJX2UGL0MMP34FLKGAM"
 			(at 57.15 33.02 0)
 			(effects
 				(font
@@ -3594,6 +3718,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "187-CL31A475KBHNNNE"
+			(at 57.15 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7d0e08ec-07ec-45a1-b4a4-7415e3ca9baf")
 		)
@@ -3611,7 +3744,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 25.4 64.77 0)
+		(at 25.4 72.39 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3620,7 +3753,7 @@
 		(dnp no)
 		(uuid "4e6bd80c-80f9-4d3c-b544-e3df1316ad49")
 		(property "Reference" "R9"
-			(at 20.32 64.77 90)
+			(at 20.32 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3628,7 +3761,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 22.86 64.77 90)
+			(at 22.86 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3636,7 +3769,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 27.178 64.77 90)
+			(at 27.178 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3645,7 +3778,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 64.77 0)
+			(at 25.4 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3654,7 +3787,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 25.4 64.77 0)
+			(at 25.4 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3663,7 +3796,7 @@
 			)
 		)
 		(property "Mouser #" "603-RC0603FR-07100KL"
-			(at 25.4 64.77 0)
+			(at 25.4 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3672,7 +3805,7 @@
 			)
 		)
 		(property "Mouser Link" "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100KL?qs=e1ok2LiJcmaihem8Va5%2Fsw%3D%3D&srsltid=AfmBOooOdyEJhW55T0bTHCn9x1S_hWTbTVBciwDqFDvXTF-M6ZtkL9r2"
-			(at 25.4 64.77 0)
+			(at 25.4 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3681,7 +3814,7 @@
 			)
 		)
 		(property "JLCPCB #" "C14675"
-			(at 25.4 64.77 90)
+			(at 25.4 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3690,7 +3823,7 @@
 			)
 		)
 		(property "Mouser Part Number" "603-RC0603FR-07100KL"
-			(at 25.4 64.77 90)
+			(at 25.4 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3699,7 +3832,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 25.4 64.77 90)
+			(at 25.4 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3708,7 +3841,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 25.4 64.77 90)
+			(at 25.4 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3717,7 +3850,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" ""
-			(at 25.4 64.77 90)
+			(at 25.4 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3726,7 +3859,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 25.4 64.77 90)
+			(at 25.4 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3735,7 +3868,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 25.4 64.77 90)
+			(at 25.4 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3744,7 +3877,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 25.4 64.77 90)
+			(at 25.4 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3753,7 +3886,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 25.4 64.77 90)
+			(at 25.4 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3762,7 +3895,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 25.4 64.77 90)
+			(at 25.4 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3780,6 +3913,181 @@
 			(project "Hansoglasses"
 				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/5d3d1737-fd18-4c19-965e-7a340bbed075"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 29.21 39.37 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ebcbe0c-ab87-4d6e-85ea-fdf3d7679c35")
+		(property "Reference" "C10"
+			(at 29.21 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 29.21 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 25.4 40.3352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/AutoMLCCKAM.pdf"
+			(at 29.21 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 29.21 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "581-KAM15BR72A104KT"
+			(at 29.21 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.com/ProductDetail/KYOCERA-AVX/KAM15BR72A104KT?qs=Jm2GQyTW%2Fbivdeq3a3Ovhw%3D%3D"
+			(at 29.21 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB #" "C14663"
+			(at 29.21 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "581-KAM15BR72A104KT"
+			(at 29.21 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 29.21 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 29.21 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 29.21 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 29.21 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 29.21 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 29.21 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 29.21 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 29.21 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a09b78a6-f66a-45b1-92ac-a0e45aa4c071")
+		)
+		(pin "1"
+			(uuid "b1b0a46e-f5d2-4d7c-8e21-74f1690fdd66")
+		)
+		(instances
+			(project "YerraGlasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/5d3d1737-fd18-4c19-965e-7a340bbed075"
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -4094,7 +4402,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 45.72 40.64 270)
+		(at 40.64 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4103,7 +4411,7 @@
 		(fields_autoplaced yes)
 		(uuid "72919165-2c5d-4895-89d0-3a8dc7130a45")
 		(property "Reference" "#PWR02"
-			(at 39.37 40.64 0)
+			(at 40.64 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4112,16 +4420,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 41.91 40.6399 90)
+			(at 43.18 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 40.64 0)
+			(at 40.64 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4130,7 +4438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 40.64 0)
+			(at 40.64 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4139,7 +4447,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 40.64 0)
+			(at 40.64 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4228,33 +4536,33 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 29.21 53.34 180)
+		(at 29.21 55.88 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "81fa8244-0da0-4ffa-8842-cbc322325851")
 		(property "Reference" "TP1"
-			(at 28.194 59.182 0)
+			(at 24.892 57.404 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "bootloader"
-			(at 28.194 61.722 0)
+			(at 24.892 54.864 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 24.13 53.34 0)
+			(at 29.21 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4263,7 +4571,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 24.13 53.34 0)
+			(at 29.21 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4272,7 +4580,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 29.21 53.34 0)
+			(at 29.21 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4281,7 +4589,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 29.21 53.34 0)
+			(at 29.21 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4290,7 +4598,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 29.21 53.34 0)
+			(at 29.21 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4299,7 +4607,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" ""
-			(at 29.21 53.34 0)
+			(at 29.21 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4308,7 +4616,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 29.21 53.34 0)
+			(at 29.21 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4317,7 +4625,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 29.21 53.34 0)
+			(at 29.21 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4326,7 +4634,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 29.21 53.34 0)
+			(at 29.21 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4335,7 +4643,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 29.21 53.34 0)
+			(at 29.21 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4344,7 +4652,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 29.21 53.34 0)
+			(at 29.21 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4356,9 +4664,185 @@
 			(uuid "d7db5a06-a7aa-485f-b204-e5fe25cc804b")
 		)
 		(instances
-			(project ""
+			(project "YerraGlasses"
 				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/5d3d1737-fd18-4c19-965e-7a340bbed075"
 					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 29.21 34.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "983c7281-b1d2-4331-a8c5-db5c1ebc28ac")
+		(property "Reference" "R2"
+			(at 29.21 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 29.21 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 29.21 32.512 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW060310K0FKEA?qs=pAO1Z172M84BVnhDjtnsoQ%3D%3D"
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "71-CRCW0603-10K-E3"
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB #" "C25804"
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "71-CRCW0603-10K-E3"
+			(at 29.21 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "65ed62e6-7723-4a1a-bb06-3480428df385")
+		)
+		(pin "1"
+			(uuid "12064d37-baab-4c08-b7dd-fb42781d316f")
+		)
+		(instances
+			(project "YerraGlasses"
+				(path "/565dd4cd-3458-4e26-8cb8-cc6b370af252/5d3d1737-fd18-4c19-965e-7a340bbed075"
+					(reference "R2")
 					(unit 1)
 				)
 			)

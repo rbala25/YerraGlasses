@@ -870,7 +870,7 @@
 				(justify left)
 			)
 		)
-		(pin "USB_+5V" input
+		(pin "USB_5V" input
 			(at 60.96 34.29 0)
 			(uuid "85bc5f8d-3a89-42f5-9a60-ed8c84bf18b5")
 			(effects
