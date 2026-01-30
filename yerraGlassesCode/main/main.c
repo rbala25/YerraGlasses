@@ -136,7 +136,7 @@ static void play_wav(const char *path)
 
 /* ===================== uart task ===================== */
 
-static void uart_task(void *arg)
+static void uart_task(void *arg) // wav files, replace if doing api
 {
     uint8_t buf[UART_BUF_SZ];
 
