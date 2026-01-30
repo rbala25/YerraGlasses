@@ -17,30 +17,31 @@
 
 #define TAG "YERRA"
 
-/* ===================== incoming uart ===================== */
+/* ===================== UART from pico ===================== */
 #define UART_PORT UART_NUM_1
 #define UART_RX_PIN 16
 #define UART_TX_PIN 17
 #define UART_BUF_SZ 256
 
-/* ===================== outgoing i2s ===================== */
+/* ===================== outgoing I2S ===================== */
 #define I2S_BCLK_PIN 10
 #define I2S_LRCLK_PIN 11
 #define I2S_DATA_PIN 9
-#define AMP_EN_PIN 12
+#define AMP_EN_PIN 12 // SD_MODE for amp, always high
 
 static i2s_chan_handle_t i2s_tx_chan;
 
-/* ===================== initialize ===================== */
+/* ===================== INITIALIZATION ===================== */
 
 static void init_amp(void)
 {
     gpio_config_t io_cfg = {
         .pin_bit_mask = 1ULL << AMP_EN_PIN,
         .mode = GPIO_MODE_OUTPUT,
+        .pull_up_en = GPIO_PULLUP_ENABLE,
     };
     gpio_config(&io_cfg);
-    gpio_set_level(AMP_EN_PIN, 1); // amp enable
+    gpio_set_level(AMP_EN_PIN, 1); // keep SD_MODE high
 }
 
 static void init_uart(void)
@@ -97,7 +98,7 @@ static void init_spiffs(void)
     ESP_LOGI(TAG, "SPIFFS mounted");
 }
 
-/* ===================== WAV PLAYER ===================== */
+/* ===================== wav===================== */
 
 static void play_wav(const char *path)
 {
@@ -133,7 +134,7 @@ static void play_wav(const char *path)
     fclose(f);
 }
 
-/* ===================== UART TASK ===================== */
+/* ===================== uart task ===================== */
 
 static void uart_task(void *arg)
 {
@@ -168,9 +169,9 @@ static void uart_task(void *arg)
 
 void app_main(void)
 {
-    init_amp();
-    init_uart();
-    init_i2s();
+    init_amp();  // SD_MODE high
+    init_uart(); // uart1 RX/TX
+    init_i2s();  // i2s output
     init_spiffs();
 
     xTaskCreate(uart_task, "uart_task", 4096, NULL, 5, NULL);
