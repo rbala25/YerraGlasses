@@ -15,5 +15,6 @@
     "--background-index",
     "--query-driver=**",
     "--compile-commands-dir=/Users/rishibala/Desktop/YerraGlasses/yerraGlassesCode/build"
-  ]
+  ],
+  "idf.currentSetup": "/Users/rishibala/esp/idf/v5.5.2/esp-idf"
 }
