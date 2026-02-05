@@ -8536,6 +8536,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "/Users/rishibala/Desktop/YerraGlasses/CAD/QFN50P300X300X80-17N.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "MountingHole:MountingHole_2.2mm_M2_custom"
 		(layer "F.Cu")
@@ -13641,6 +13652,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "/Users/rishibala/Desktop/YerraGlasses/CAD/QFN50P300X300X80-17N.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
 			)
 		)
 	)
