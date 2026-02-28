@@ -7,9 +7,9 @@
 #include "freertos/task.h"
 #include "freertos/queue.h"
 
-#include "driver/uart.h"
 #include "driver/gpio.h"
 #include "driver/i2s_std.h"
+#include "driver/i2c.h"
 
 #include "esp_log.h"
 #include "esp_system.h"
@@ -113,11 +113,13 @@ static const label_map_t label_map[] = {
 
 #define NUM_LABELS (sizeof(label_map) / sizeof(label_map[0]))
 
-/* ================= uart ================= */
-#define UART_PORT UART_NUM_1
-#define UART_RX_PIN 16
-#define UART_TX_PIN 17
-#define UART_BUF_SZ 256
+/* ================= I2C ================= */
+
+#define I2C_PORT I2C_NUM_0
+#define I2C_SDA_PIN 4
+#define I2C_SCL_PIN 5
+#define I2C_ADDR 0x28
+#define I2C_BUF_SZ 128
 
 /* ================= i2s ================= */
 #define I2S_BCLK_PIN 10
@@ -143,23 +145,25 @@ static void init_amp(void)
     gpio_set_level(AMP_EN_PIN, 1);
 }
 
-/* ================= uart config ================= */
+/* ================= I2C config ================= */
 
-static void init_uart(void)
+static void init_i2c(void)
 {
-    uart_config_t cfg = {
-        .baud_rate = 115200,
-        .data_bits = UART_DATA_8_BITS,
-        .parity = UART_PARITY_DISABLE,
-        .stop_bits = UART_STOP_BITS_1,
-        .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
-        .source_clk = UART_SCLK_DEFAULT,
-    };
+    i2c_config_t conf = {
+        .mode = I2C_MODE_SLAVE,
+        .sda_io_num = I2C_SDA_PIN,
+        .scl_io_num = I2C_SCL_PIN,
+        .sda_pullup_en = GPIO_PULLUP_ENABLE,
+        .scl_pullup_en = GPIO_PULLUP_ENABLE,
+        .slave = {
+            .slave_addr = I2C_ADDR,
+            .addr_10bit_en = 0,
+        }};
 
-    uart_driver_install(UART_PORT, UART_BUF_SZ * 2, 0, 0, NULL, 0);
-    uart_param_config(UART_PORT, &cfg);
-    uart_set_pin(UART_PORT, UART_TX_PIN, UART_RX_PIN,
-                 UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+    ESP_ERROR_CHECK(i2c_param_config(I2C_PORT, &conf));
+    ESP_ERROR_CHECK(i2c_driver_install(I2C_PORT, conf.mode, I2C_BUF_SZ, I2C_BUF_SZ, 0));
+
+    ESP_LOGI(TAG, "I2C slave initialized on 0x%02x", I2C_ADDR);
 }
 
 /* ================= i2s ================= */
@@ -258,37 +262,28 @@ static void audio_task(void *arg)
     }
 }
 
-/* ================= uart tasks ================= */
+/* ================= I2C task ================= */
 
-static void uart_task(void *arg)
+static void i2c_task(void *arg)
 {
-    uint8_t buf[UART_BUF_SZ];
+    uint8_t buf[I2C_BUF_SZ];
 
     while (1)
     {
-        int len = uart_read_bytes(
-            UART_PORT,
-            buf,
-            UART_BUF_SZ - 1,
-            20 / portTICK_PERIOD_MS);
-
+        int len = i2c_slave_read_buffer(I2C_PORT, buf, I2C_BUF_SZ - 1, pdMS_TO_TICKS(10));
         if (len > 0)
         {
             buf[len] = 0;
 
             char label[32];
-            float prob = 0.0;
-
+            float prob;
             if (sscanf((char *)buf, "%31[^:]:%f", label, &prob) == 2)
             {
-                if (prob < 0.5)
-                    continue;
-                if (speaking)
+                if (prob < 0.5 || speaking)
                     continue;
 
                 char filepath[64];
                 bool found = false;
-
                 for (int i = 0; i < NUM_LABELS; i++)
                 {
                     if (strcmp(label, label_map[i].label) == 0)
@@ -298,13 +293,14 @@ static void uart_task(void *arg)
                         break;
                     }
                 }
-
                 if (!found)
                     continue;
 
                 xQueueSend(audio_queue, &filepath, portMAX_DELAY);
             }
         }
+
+        vTaskDelay(pdMS_TO_TICKS(1));
     }
 }
 
@@ -313,14 +309,14 @@ static void uart_task(void *arg)
 void app_main(void)
 {
     init_amp();
-    init_uart();
+    init_i2c();
     init_i2s();
     init_spiffs();
 
     audio_queue = xQueueCreate(5, sizeof(char[64]));
 
     xTaskCreate(audio_task, "audio_task", 4096, NULL, 5, NULL);
-    xTaskCreate(uart_task, "uart_task", 4096, NULL, 5, NULL);
+    xTaskCreate(i2c_task, "i2c_task", 4096, NULL, 5, NULL);
 
     ESP_LOGI(TAG, "System ready");
 }
