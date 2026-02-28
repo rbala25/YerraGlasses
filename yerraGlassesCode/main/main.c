@@ -18,6 +18,101 @@
 
 #define TAG "YERRA"
 
+/* ==========label map========*/
+
+typedef struct
+{
+    const char *label;
+    const char *file;
+} label_map_t;
+
+static const label_map_t label_map[] = {
+
+    {"person", "/spiffs/person.wav"},
+    {"bicycle", "/spiffs/bicycle.wav"},
+    {"car", "/spiffs/car.wav"},
+    {"motorcycle", "/spiffs/motorcycle.wav"},
+    {"airplane", "/spiffs/airplane.wav"},
+    {"bus", "/spiffs/bus.wav"},
+    {"train", "/spiffs/train.wav"},
+    {"truck", "/spiffs/truck.wav"},
+    {"boat", "/spiffs/boat.wav"},
+    {"traffic light", "/spiffs/traffic_light.wav"},
+    {"fire hydrant", "/spiffs/fire_hydrant.wav"},
+    {"stop sign", "/spiffs/stop_sign.wav"},
+    {"parking meter", "/spiffs/parking_meter.wav"},
+    {"bench", "/spiffs/bench.wav"},
+    {"bird", "/spiffs/bird.wav"},
+    {"cat", "/spiffs/cat.wav"},
+    {"dog", "/spiffs/dog.wav"},
+    {"horse", "/spiffs/horse.wav"},
+    {"sheep", "/spiffs/sheep.wav"},
+    {"cow", "/spiffs/cow.wav"},
+    {"elephant", "/spiffs/elephant.wav"},
+    {"bear", "/spiffs/bear.wav"},
+    {"zebra", "/spiffs/zebra.wav"},
+    {"giraffe", "/spiffs/giraffe.wav"},
+    {"backpack", "/spiffs/backpack.wav"},
+    {"umbrella", "/spiffs/umbrella.wav"},
+    {"handbag", "/spiffs/handbag.wav"},
+    {"tie", "/spiffs/tie.wav"},
+    {"suitcase", "/spiffs/suitcase.wav"},
+    {"frisbee", "/spiffs/frisbee.wav"},
+    {"skis", "/spiffs/skis.wav"},
+    {"snowboard", "/spiffs/snowboard.wav"},
+    {"sports ball", "/spiffs/sports_ball.wav"},
+    {"kite", "/spiffs/kite.wav"},
+    {"baseball bat", "/spiffs/baseball_bat.wav"},
+    {"baseball glove", "/spiffs/baseball_glove.wav"},
+    {"skateboard", "/spiffs/skateboard.wav"},
+    {"surfboard", "/spiffs/surfboard.wav"},
+    {"tennis racket", "/spiffs/tennis_racket.wav"},
+    {"bottle", "/spiffs/bottle.wav"},
+    {"wine glass", "/spiffs/wine_glass.wav"},
+    {"cup", "/spiffs/cup.wav"},
+    {"fork", "/spiffs/fork.wav"},
+    {"knife", "/spiffs/knife.wav"},
+    {"spoon", "/spiffs/spoon.wav"},
+    {"bowl", "/spiffs/bowl.wav"},
+    {"banana", "/spiffs/banana.wav"},
+    {"apple", "/spiffs/apple.wav"},
+    {"sandwich", "/spiffs/sandwich.wav"},
+    {"orange", "/spiffs/orange.wav"},
+    {"brocolli", "/spiffs/brocolli.wav"},
+    {"carrot", "/spiffs/carrot.wav"},
+    {"hot dog", "/spiffs/hot_dog.wav"},
+    {"pizza", "/spiffs/pizza.wav"},
+    {"donut", "/spiffs/donut.wav"},
+    {"cake", "/spiffs/cake.wav"},
+    {"chair", "/spiffs/chair.wav"},
+    {"couch", "/spiffs/couch.wav"},
+    {"potted plant", "/spiffs/potted_plant.wav"},
+    {"bed", "/spiffs/bed.wav"},
+    {"dining table", "/spiffs/dining_table.wav"},
+    {"toilet", "/spiffs/toilet.wav"},
+    {"tv", "/spiffs/tv.wav"},
+    {"laptop", "/spiffs/laptop.wav"},
+    {"mouse", "/spiffs/mouse.wav"},
+    {"remote", "/spiffs/remote.wav"},
+    {"keyboard", "/spiffs/keyboard.wav"},
+    {"cell phone", "/spiffs/cell_phone.wav"},
+    {"microwave", "/spiffs/microwave.wav"},
+    {"oven", "/spiffs/oven.wav"},
+    {"toaster", "/spiffs/toaster.wav"},
+    {"sink", "/spiffs/sink.wav"},
+    {"refrigerator", "/spiffs/refrigerator.wav"},
+    {"book", "/spiffs/book.wav"},
+    {"clock", "/spiffs/clock.wav"},
+    {"vase", "/spiffs/vase.wav"},
+    {"scissors", "/spiffs/scissors.wav"},
+    {"teddy bear", "/spiffs/teddy_bear.wav"},
+    {"hair drier", "/spiffs/hair_drier.wav"},
+    {"toothbrush", "/spiffs/toothbrush.wav"}
+
+};
+
+#define NUM_LABELS (sizeof(label_map) / sizeof(label_map[0]))
+
 /* ================= uart ================= */
 #define UART_PORT UART_NUM_1
 #define UART_RX_PIN 16
@@ -192,17 +287,22 @@ static void uart_task(void *arg)
                     continue;
 
                 char filepath[64];
+                bool found = false;
 
-                if (strcmp(label, "PERSON") == 0)
-                    strcpy(filepath, "/spiffs/person.wav");
-                else if (strcmp(label, "CAR") == 0)
-                    strcpy(filepath, "/spiffs/car.wav");
-                else if (strcmp(label, "DOG") == 0)
-                    strcpy(filepath, "/spiffs/dog.wav");
-                else
+                for (int i = 0; i < NUM_LABELS; i++)
+                {
+                    if (strcmp(label, label_map[i].label) == 0)
+                    {
+                        strcpy(filepath, label_map[i].file);
+                        found = true;
+                        break;
+                    }
+                }
+
+                if (!found)
                     continue;
 
-                xQueueSend(audio_queue, filepath, 0);
+                xQueueSend(audio_queue, &filepath, portMAX_DELAY);
             }
         }
     }
