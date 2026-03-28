@@ -220,26 +220,55 @@ static void play_wav(const char *path)
         return;
     }
 
-    uint8_t wav_header[44];
-    fread(wav_header, 1, 44, f);
+    uint8_t buf[1];
+    uint8_t match[4] = {'d', 'a', 't', 'a'};
+    int matched = 0;
+    long data_offset = -1;
+
+    for (int i = 0; i < 512; i++)
+    {
+        if (fread(buf, 1, 1, f) != 1) 
+        {
+            ESP_LOGE(TAG, "fread failed at byte %d", i);
+            break;
+        }
+        if (buf[0] == match[matched])
+            matched++;
+        else
+            matched = 0;
+        if (matched == 4)
+        {
+            data_offset = ftell(f) + 4;
+            ESP_LOGI(TAG, "Found data chunk at offset %ld", data_offset);
+            break;
+        }
+    }
+
+    if (data_offset < 0)
+    {
+        ESP_LOGE(TAG, "No data chunk found in %s", path);
+        fclose(f);
+        return;
+    }
+
+    int seek_ret = fseek(f, data_offset, SEEK_SET);
+    ESP_LOGI(TAG, "fseek to %ld returned %d", data_offset, seek_ret);
 
     int16_t samples[512];
     size_t bytes_written;
+    int chunk_count = 0;
 
     while (1)
     {
         size_t samples_read = fread(samples, sizeof(int16_t), 512, f);
         if (samples_read == 0)
             break;
-
-        i2s_channel_write(
-            i2s_tx_chan,
-            samples,
-            samples_read * sizeof(int16_t),
-            &bytes_written,
-            portMAX_DELAY);
+        chunk_count++;
+        i2s_channel_write(i2s_tx_chan, samples, samples_read * sizeof(int16_t),
+                          &bytes_written, portMAX_DELAY);
     }
 
+    ESP_LOGI(TAG, "Played %d chunks", chunk_count);
     fclose(f);
 }
 
@@ -304,7 +333,7 @@ static void uart_task(void *arg)
                     while (llen > 0 && label[llen - 1] == ' ')
                         label[--llen] = 0;
 
-                    if (prob < 0.5f || speaking)
+                    if (prob < 0.3f || speaking)
                         continue;
 
                     int found_idx = -1;
@@ -352,6 +381,21 @@ static void uart_task(void *arg)
 
 /* ================= main ================= */
 
+// void app_main(void)
+// {
+//     init_amp();
+//     init_uart();
+//     init_i2s();
+//     init_spiffs();
+
+//     audio_queue = xQueueCreate(5, sizeof(char[64]));
+
+//     xTaskCreate(audio_task, "audio_task", 4096, NULL, 5, NULL);
+//     xTaskCreate(uart_task, "uart_task", 4096, NULL, 5, NULL);
+
+//     ESP_LOGI(TAG, "System ready");
+// }
+
 void app_main(void)
 {
     init_amp();
@@ -363,6 +407,10 @@ void app_main(void)
 
     xTaskCreate(audio_task, "audio_task", 4096, NULL, 5, NULL);
     xTaskCreate(uart_task, "uart_task", 4096, NULL, 5, NULL);
+
+    // test - queue a wav directly
+    char test[] = "/spiffs/person.wav";
+    xQueueSend(audio_queue, test, portMAX_DELAY);
 
     ESP_LOGI(TAG, "System ready");
 }
