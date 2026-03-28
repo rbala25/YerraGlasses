@@ -9,12 +9,12 @@
 
 #include "driver/gpio.h"
 #include "driver/i2s_std.h"
-#include "driver/i2c.h"
+#include "driver/uart.h"
 
 #include "esp_log.h"
-#include "esp_system.h"
+// #include "esp_system.h"
 #include "esp_spiffs.h"
-#include "esp_vfs.h"
+// #include "esp_vfs.h"
 
 #define TAG "YERRA"
 
@@ -113,13 +113,13 @@ static const label_map_t label_map[] = {
 
 #define NUM_LABELS (sizeof(label_map) / sizeof(label_map[0]))
 
-/* ================= I2C ================= */
+/* ================= UART ================= */
 
-#define I2C_PORT I2C_NUM_0
-#define I2C_SDA_PIN 4
-#define I2C_SCL_PIN 5
-#define I2C_ADDR 0x28
-#define I2C_BUF_SZ 128
+#define UART_PORT   UART_NUM_1
+#define UART_RX_PIN 4
+#define UART_TX_PIN 5
+#define UART_BAUD   115200
+#define UART_BUF_SZ 256
 
 /* ================= i2s ================= */
 #define I2S_BCLK_PIN 10
@@ -145,25 +145,24 @@ static void init_amp(void)
     gpio_set_level(AMP_EN_PIN, 1);
 }
 
-/* ================= I2C config ================= */
+/* ================= UART config ================= */
 
-static void init_i2c(void)
+static void init_uart(void)
 {
-    i2c_config_t conf = {
-        .mode = I2C_MODE_SLAVE,
-        .sda_io_num = I2C_SDA_PIN,
-        .scl_io_num = I2C_SCL_PIN,
-        .sda_pullup_en = GPIO_PULLUP_ENABLE,
-        .scl_pullup_en = GPIO_PULLUP_ENABLE,
-        .slave = {
-            .slave_addr = I2C_ADDR,
-            .addr_10bit_en = 0,
-        }};
+    uart_config_t conf = {
+        .baud_rate  = UART_BAUD,
+        .data_bits  = UART_DATA_8_BITS,
+        .parity     = UART_PARITY_DISABLE,
+        .stop_bits  = UART_STOP_BITS_1,
+        .flow_ctrl  = UART_HW_FLOWCTRL_DISABLE,
+    };
 
-    ESP_ERROR_CHECK(i2c_param_config(I2C_PORT, &conf));
-    ESP_ERROR_CHECK(i2c_driver_install(I2C_PORT, conf.mode, I2C_BUF_SZ, I2C_BUF_SZ, 0));
+    ESP_ERROR_CHECK(uart_param_config(UART_PORT, &conf));
+    ESP_ERROR_CHECK(uart_set_pin(UART_PORT, UART_TX_PIN, UART_RX_PIN,
+                                 UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE));
+    ESP_ERROR_CHECK(uart_driver_install(UART_PORT, UART_BUF_SZ * 2, 0, 0, NULL, 0));
 
-    ESP_LOGI(TAG, "I2C slave initialized on 0x%02x", I2C_ADDR);
+    ESP_LOGI(TAG, "UART initialized at %d baud", UART_BAUD);
 }
 
 /* ================= i2s ================= */
@@ -262,45 +261,81 @@ static void audio_task(void *arg)
     }
 }
 
-/* ================= I2C task ================= */
+// static void audio_task(void *arg)
+// {
+//     while (1)
+//     {
+//         speaking = true;
+//         ESP_LOGI(TAG, "Looping person.wav");
+//         play_wav("/spiffs/person.wav");
+//     }
+// }
 
-static void i2c_task(void *arg)
+/* ================= UART task ================= */
+
+static void uart_task(void *arg)
 {
-    uint8_t buf[I2C_BUF_SZ];
+    uint8_t buf[UART_BUF_SZ];
+    char line[UART_BUF_SZ];
+    int line_pos = 0;
 
     while (1)
     {
-        int len = i2c_slave_read_buffer(I2C_PORT, buf, I2C_BUF_SZ - 1, pdMS_TO_TICKS(10));
-        if (len > 0)
+        int len = uart_read_bytes(UART_PORT, buf, UART_BUF_SZ - 1, pdMS_TO_TICKS(10));
+
+        for (int i = 0; i < len; i++)
         {
-            buf[len] = 0;
-
-            char label[32];
-            float prob;
-            if (sscanf((char *)buf, "%31[^:]:%f", label, &prob) == 2)
+            if (buf[i] == '\n')
             {
-                if (prob < 0.5 || speaking)
-                    continue;
+                line[line_pos] = 0;
+                line_pos = 0;
 
-                char filepath[64];
-                bool found = false;
-                for (int i = 0; i < NUM_LABELS; i++)
+                char label[32];
+                float prob;
+                if (sscanf(line, "%31[^:]:%f", label, &prob) == 2)
                 {
-                    if (strcmp(label, label_map[i].label) == 0)
+                    if (prob < 0.5f || speaking)
+                        continue;
+
+                    char filepath[64];
+                    bool found = false;
+                    for (int j = 0; j < NUM_LABELS; j++)
                     {
-                        strcpy(filepath, label_map[i].file);
-                        found = true;
-                        break;
+                        if (strcmp(label, label_map[j].label) == 0)
+                        {
+                            strcpy(filepath, label_map[j].file);
+                            found = true;
+                            break;
+                        }
+                    }
+
+                    if (!found)
+                    {
+                        ESP_LOGW(TAG, "Unknown label: %s", label);
+                        continue;
+                    }
+
+                    if (xQueueSend(audio_queue, filepath, 0) != pdTRUE)
+                    {
+                        ESP_LOGW(TAG, "Audio queue full, dropping: %s", filepath);
+                    }
+                    else
+                    {
+                        ESP_LOGI(TAG, "Queued: %s (%.2f)", filepath, prob);
                     }
                 }
-                if (!found)
-                    continue;
-
-                xQueueSend(audio_queue, &filepath, portMAX_DELAY);
+            }
+            else if (buf[i] != '\r')
+            {
+                if (line_pos < UART_BUF_SZ - 1)
+                    line[line_pos++] = buf[i];
+                else
+                {
+                    ESP_LOGW(TAG, "Line buffer overflow, resetting");
+                    line_pos = 0;
+                }
             }
         }
-
-        vTaskDelay(pdMS_TO_TICKS(1));
     }
 }
 
@@ -309,14 +344,14 @@ static void i2c_task(void *arg)
 void app_main(void)
 {
     init_amp();
-    init_i2c();
+    init_uart();
     init_i2s();
     init_spiffs();
 
     audio_queue = xQueueCreate(5, sizeof(char[64]));
 
     xTaskCreate(audio_task, "audio_task", 4096, NULL, 5, NULL);
-    xTaskCreate(i2c_task, "i2c_task", 4096, NULL, 5, NULL);
+    xTaskCreate(uart_task, "uart_task", 4096, NULL, 5, NULL);
 
     ESP_LOGI(TAG, "System ready");
 }
