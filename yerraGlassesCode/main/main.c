@@ -273,6 +273,8 @@ static void audio_task(void *arg)
 
 /* ================= UART task ================= */
 
+/* ================= UART task ================= */
+
 static void uart_task(void *arg)
 {
     uint8_t buf[UART_BUF_SZ];
@@ -291,29 +293,38 @@ static void uart_task(void *arg)
                 line_pos = 0;
 
                 char label[32];
+                int x1, y1, x2, y2;
                 float prob;
-                if (sscanf(line, "%31[^:]:%f", label, &prob) == 2)
+
+                if (sscanf(line, "%31[^@]@ (%d %d %d %d) %f",
+                           label, &x1, &y1, &x2, &y2, &prob) == 6)
                 {
+                    // trim trailing space from label
+                    int llen = strlen(label);
+                    while (llen > 0 && label[llen - 1] == ' ')
+                        label[--llen] = 0;
+
                     if (prob < 0.5f || speaking)
                         continue;
 
-                    char filepath[64];
-                    bool found = false;
+                    int found_idx = -1;
                     for (int j = 0; j < NUM_LABELS; j++)
                     {
                         if (strcmp(label, label_map[j].label) == 0)
                         {
-                            strcpy(filepath, label_map[j].file);
-                            found = true;
+                            found_idx = j;
                             break;
                         }
                     }
 
-                    if (!found)
+                    if (found_idx == -1)
                     {
-                        ESP_LOGW(TAG, "Unknown label: %s", label);
+                        ESP_LOGW(TAG, "Unknown label: '%s'", label);
                         continue;
                     }
+
+                    char filepath[64];
+                    strcpy(filepath, label_map[found_idx].file);
 
                     if (xQueueSend(audio_queue, filepath, 0) != pdTRUE)
                     {
